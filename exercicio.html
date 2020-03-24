@@ -1,0 +1,22 @@
+<script>
+function mostra(frase){
+    alert(frase)
+}
+
+var anoNasc = parseInt(prompt("Ano de nascimento"));
+var anoInicio = parseInt(prompt("Ano que começou a trabalhar"));
+var anoAtual = parseInt(prompt("Digite o ano atual"));
+
+anoInicio = anoAtual - anoInicio;
+anoNasc = anoAtual - anoNasc;
+
+if (anoNasc >= 65 && anoInicio >= 30 || anoNasc >= 60 && anoInicio >= 25){
+    mostra("Sua idade é " + anoNasc + " anos");
+    mostra("O tempo de serviço é " + anoInicio + " anos");
+    mostra("Requer aposentadoria");
+}else{
+    mostra("sua idade é " + anoNasc + " anos");
+    mostra("O tempo de serviço é " + anoInicio + " anos");
+    mostra("Não requer aposentadoria");
+}
+</script>
